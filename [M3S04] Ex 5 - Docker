@@ -1,0 +1,2 @@
+Qual comando usamos para ver detalhes de configurações, volumes, rede e demais informações de um container?
+docker ps
