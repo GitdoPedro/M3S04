@@ -1,0 +1,13 @@
+1° escreva o comando para criar e encerrar os recursos escritos em um arquivo .yaml no kubernetes.
+
+# kubectl apply -f arquivo.yaml
+# kubectl delete -f arquivo.yaml
+
+2° escreva o comando base para listarmos um recurso no kubernetes (pods, services, deploy…)
+# kubectl get nome_do_recurso
+# kubectl get services
+# kubectl get deployments
+
+ou pode listar todos de uma vez : 
+
+# kubectl get all
