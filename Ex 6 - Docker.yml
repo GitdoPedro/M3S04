@@ -1,0 +1,30 @@
+#docker-compose up -d
+
+version: '3'
+
+services:
+  # Serviço da aplicação
+  app:
+    image: nginx:latest
+    ports:
+      - 8080:80
+    volumes:
+      - app-volume:/app
+    container_name: app-container
+
+  # Serviço do banco de dados
+  banco-de-dados:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    volumes:
+      - banco-volume:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=senha
+    container_name: banco-container
+
+volumes:
+  # Volume da aplicação
+  app-volume:
+  # Volume do banco de dados
+  banco-volume:
