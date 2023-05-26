@@ -1,0 +1,4 @@
+Sabendo que um contêiner pode ser encerrado a qualquer momento e que isso excluirá todos seus registros, dados e configurações, como podemos contornar essa situação? exemplifique
+
+
+Utilizando volumes, assim é possível mapear um diretório do host para um diretório dentro do contêiner, gerando persistência entre conteiner x volume.
