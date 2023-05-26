@@ -1,0 +1,6 @@
+Depois de logar no Docker Hub,
+renomear a imagem pra que esteja no padrão Docker Hub:
+# docker tag nome-da-imagem nome-do-usuario/nome-da-imagem:tag
+em seguida, enviar a imagem através do docker push 
+# docker push nome-do-usuario/nome-da-imagem:tag
+
