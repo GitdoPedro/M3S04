@@ -1,0 +1,18 @@
+# Define a imagem base
+FROM openjdk:11
+
+# Define o diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copia o arquivo .java para o contêiner
+COPY HelloWorld.java .
+
+# Compila o arquivo .java para um arquivo .class
+RUN javac HelloWorld.java
+
+# Define o comando de execução da aplicação
+CMD ["java", "HelloWorld"]
+
+# docker build -t nome-da-imagem .
+
+# docker run nome-da-imagem
